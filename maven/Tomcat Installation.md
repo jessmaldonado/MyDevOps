@@ -38,9 +38,18 @@ wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.73/bin/apache-tomcat-8.5.73.t
 tar -xvzf /opt/apache-tomcat-8.5.73.tar.gz
 ```
 
-2. Grant executin permissions to start.sh and shutdown.sh which are under bin dir
+2. Grant execution permissions to start.sh and shutdown.sh which are under bin dir
 ```sh
-chmod -x opt/apache-tomcat-8.5.35/bin/startup.sh 
+chmod u+x /opt/apache-tomcat-8.5.35/bin/startup.sh 
 shutdown.sh
 ```
  
+Running manual service
+```sh 
+ ./startup.sh 
+```
+
+Validate 
+```sh
+netstat -tulpn
+```
